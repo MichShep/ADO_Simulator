@@ -1,3 +1,5 @@
+![ProjectLogo](./TZ_ADO/src/ProjectLogo.png)
+
 ### Hello!
 
 Welcome to my **Approximate Distance Oracle Simulation**, inspired by the paper _Thorup-Zwick Approximate Distance Oracles (2005)_. This data structure established a fundamental trade-off framework for efficiently estimating distances in a graph. [What is Graph Theory?](https://en.wikipedia.org/wiki/Graph_theory)
@@ -18,11 +20,11 @@ This was compiled on a Mac, so you may need to recompile it by simply running $m
 
 ### Controls
 
-- By default, a **node is selected** at the start.
+- By default, a **node is selected** at the start, with the red line showing the distances stored from that node.
 - **Hover over other nodes** to see their ID and the distance estimated by the Oracle (actual distance will be added later).
 - **Pivot nodes** are highlighted in **blue**, and sampled nodes are labeled with **Roman numerals** corresponding to their sample.
-- To **change the center node**, left-click on any other node.
-- To **view the Oracle's path to a target node**, right-click on that node. This will display the stored distance and reveal where it intersects with the center node.
+- To **change the center node**, right-click on any other node.
+- To **view the Oracle's path to a target node**, left-click on that node. This will display the stored distance of that node and reveal where it intersects with the center node.
 
 Here is a short demo ideo showing the simulation:
 
