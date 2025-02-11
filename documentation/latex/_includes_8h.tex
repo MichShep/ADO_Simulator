@@ -1,0 +1,162 @@
+\doxysection{Includes.\+h File Reference}
+\hypertarget{_includes_8h}{}\label{_includes_8h}\index{Includes.h@{Includes.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$filesystem$>$}\newline
+{\ttfamily \#include "{}../include/\+SDL2/\+SDL.\+h"{}}\newline
+{\ttfamily \#include "{}../include/\+SDL2\+\_\+tff/\+SDL\+\_\+ttf.\+h"{}}\newline
+{\ttfamily \#include "{}../include/\+SDL2\+\_\+tff/\+SDL\+\_\+\+Font\+Cache.\+h"{}}\newline
+{\ttfamily \#include "{}../include/\+SDL2\+\_\+image/\+SDL\+\_\+image.\+h"{}}\newline
+{\ttfamily \#include "{}../include/\+SDL2/\+SDL\+\_\+gamecontroller.\+h"{}}\newline
+Include dependency graph for Includes.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_includes_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_includes_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_screen}{Screen}}
+\item 
+class \mbox{\hyperlink{class_spritesheet}{Spritesheet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_includes_8h_ae237cf4558548142605f37f4b6abb00b}{past\+Wait}}(h,  t,  w)~(h? (t -\/ h $>$= w) \+: (false))
+\item 
+\#define \mbox{\hyperlink{_includes_8h_a79ff2f96e1cf397490e6faec24ded1fd}{calc\+Dist}}(x1,  y1,  x2,  y2)~((x2-\/x1)\texorpdfstring{$\ast$}{*}(x2-\/x1)+(y2-\/y1)\texorpdfstring{$\ast$}{*}(y2-\/y1))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef SDL\+\_\+\+Rect \mbox{\hyperlink{_includes_8h_a6d8cb67f7ae82c33cd4b313a5b3093ee}{Target}}
+\item 
+typedef uint32\+\_\+t \mbox{\hyperlink{_includes_8h_a451a7d205dfb766727eba25c6e61c687}{tick\+\_\+t}}
+\item 
+typedef int \mbox{\hyperlink{_includes_8h_ac2655842e246555b4a7010a59b7243a8}{ID\+\_\+t}}
+\item 
+typedef double \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5}{Point\+State}} \{ \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a9eea16b4e105c96853a3a4cb462cc3a4}{BLANK}}
+, \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5afa5d032a3611dbd07937cd18aaf08901}{SELECTED\+\_\+V}}
+, \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a8813c51b0f2a0bcf7ba421a1b301276e}{SELECTED\+\_\+U}}
+, \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a4549aeffb20be3e9cd37a120026fb743}{SAMPLED}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{_includes_8h_a01f8e3b004e028e445efbb334d0fd610}{JOYSTICK\+\_\+\+DEADZONE}} = 16000
+\item 
+constexpr int \mbox{\hyperlink{_includes_8h_ab285c1b47617f643247f9588ae948877}{CURSOR\+\_\+\+SPEED}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_includes_8h_a79ff2f96e1cf397490e6faec24ded1fd}\label{_includes_8h_a79ff2f96e1cf397490e6faec24ded1fd} 
+\index{Includes.h@{Includes.h}!calcDist@{calcDist}}
+\index{calcDist@{calcDist}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{calcDist}{calcDist}}
+{\footnotesize\ttfamily \#define calc\+Dist(\begin{DoxyParamCaption}\item[{}]{x1,  }\item[{}]{y1,  }\item[{}]{x2,  }\item[{}]{y2 }\end{DoxyParamCaption})~((x2-\/x1)\texorpdfstring{$\ast$}{*}(x2-\/x1)+(y2-\/y1)\texorpdfstring{$\ast$}{*}(y2-\/y1))}
+
+\Hypertarget{_includes_8h_ae237cf4558548142605f37f4b6abb00b}\label{_includes_8h_ae237cf4558548142605f37f4b6abb00b} 
+\index{Includes.h@{Includes.h}!pastWait@{pastWait}}
+\index{pastWait@{pastWait}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{pastWait}{pastWait}}
+{\footnotesize\ttfamily \#define past\+Wait(\begin{DoxyParamCaption}\item[{}]{h,  }\item[{}]{t,  }\item[{}]{w }\end{DoxyParamCaption})~(h? (t -\/ h $>$= w) \+: (false))}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}\label{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f} 
+\index{Includes.h@{Includes.h}!dist\_t@{dist\_t}}
+\index{dist\_t@{dist\_t}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{dist\_t}{dist\_t}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}}}
+
+\Hypertarget{_includes_8h_ac2655842e246555b4a7010a59b7243a8}\label{_includes_8h_ac2655842e246555b4a7010a59b7243a8} 
+\index{Includes.h@{Includes.h}!ID\_t@{ID\_t}}
+\index{ID\_t@{ID\_t}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{ID\_t}{ID\_t}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{_includes_8h_ac2655842e246555b4a7010a59b7243a8}{ID\+\_\+t}}}
+
+\Hypertarget{_includes_8h_a6d8cb67f7ae82c33cd4b313a5b3093ee}\label{_includes_8h_a6d8cb67f7ae82c33cd4b313a5b3093ee} 
+\index{Includes.h@{Includes.h}!Target@{Target}}
+\index{Target@{Target}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{Target}{Target}}
+{\footnotesize\ttfamily typedef SDL\+\_\+\+Rect \mbox{\hyperlink{_includes_8h_a6d8cb67f7ae82c33cd4b313a5b3093ee}{Target}}}
+
+\Hypertarget{_includes_8h_a451a7d205dfb766727eba25c6e61c687}\label{_includes_8h_a451a7d205dfb766727eba25c6e61c687} 
+\index{Includes.h@{Includes.h}!tick\_t@{tick\_t}}
+\index{tick\_t@{tick\_t}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{tick\_t}{tick\_t}}
+{\footnotesize\ttfamily typedef uint32\+\_\+t \mbox{\hyperlink{_includes_8h_a451a7d205dfb766727eba25c6e61c687}{tick\+\_\+t}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5}\label{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5} 
+\index{Includes.h@{Includes.h}!PointState@{PointState}}
+\index{PointState@{PointState}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{PointState}{PointState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5}{Point\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLANK@{BLANK}!Includes.h@{Includes.h}}\index{Includes.h@{Includes.h}!BLANK@{BLANK}}}\Hypertarget{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a9eea16b4e105c96853a3a4cb462cc3a4}\label{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a9eea16b4e105c96853a3a4cb462cc3a4} 
+BLANK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTED\_V@{SELECTED\_V}!Includes.h@{Includes.h}}\index{Includes.h@{Includes.h}!SELECTED\_V@{SELECTED\_V}}}\Hypertarget{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5afa5d032a3611dbd07937cd18aaf08901}\label{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5afa5d032a3611dbd07937cd18aaf08901} 
+SELECTED\+\_\+V&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SELECTED\_U@{SELECTED\_U}!Includes.h@{Includes.h}}\index{Includes.h@{Includes.h}!SELECTED\_U@{SELECTED\_U}}}\Hypertarget{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a8813c51b0f2a0bcf7ba421a1b301276e}\label{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a8813c51b0f2a0bcf7ba421a1b301276e} 
+SELECTED\+\_\+U&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SAMPLED@{SAMPLED}!Includes.h@{Includes.h}}\index{Includes.h@{Includes.h}!SAMPLED@{SAMPLED}}}\Hypertarget{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a4549aeffb20be3e9cd37a120026fb743}\label{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a4549aeffb20be3e9cd37a120026fb743} 
+SAMPLED&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_includes_8h_ab285c1b47617f643247f9588ae948877}\label{_includes_8h_ab285c1b47617f643247f9588ae948877} 
+\index{Includes.h@{Includes.h}!CURSOR\_SPEED@{CURSOR\_SPEED}}
+\index{CURSOR\_SPEED@{CURSOR\_SPEED}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{CURSOR\_SPEED}{CURSOR\_SPEED}}
+{\footnotesize\ttfamily constexpr int CURSOR\+\_\+\+SPEED = 5\hspace{0.3cm}{\ttfamily [constexpr]}}
+
+\Hypertarget{_includes_8h_a01f8e3b004e028e445efbb334d0fd610}\label{_includes_8h_a01f8e3b004e028e445efbb334d0fd610} 
+\index{Includes.h@{Includes.h}!JOYSTICK\_DEADZONE@{JOYSTICK\_DEADZONE}}
+\index{JOYSTICK\_DEADZONE@{JOYSTICK\_DEADZONE}!Includes.h@{Includes.h}}
+\doxysubsubsection{\texorpdfstring{JOYSTICK\_DEADZONE}{JOYSTICK\_DEADZONE}}
+{\footnotesize\ttfamily const int JOYSTICK\+\_\+\+DEADZONE = 16000}
+

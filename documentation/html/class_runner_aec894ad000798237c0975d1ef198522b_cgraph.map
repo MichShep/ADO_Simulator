@@ -1,0 +1,5 @@
+<map id="Runner::~Runner" name="Runner::~Runner">
+<area shape="rect" id="Node000001" title="Destroy the Runner object and free the memory of all balls and points." alt="" coords="5,5,127,31"/>
+<area shape="rect" id="Node000002" href="$class_runner.html#a5db95bc755f3145d740c72788fa8f1c7" title="Shutdown the app and free allocated SDL memory." alt="" coords="175,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,16,159,16,159,21,127,21"/>
+</map>

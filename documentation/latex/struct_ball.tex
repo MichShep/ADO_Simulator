@@ -1,0 +1,106 @@
+\doxysection{Ball Struct Reference}
+\hypertarget{struct_ball}{}\label{struct_ball}\index{Ball@{Ball}}
+
+
+Struct to represent the \textquotesingle{}\doxylink{struct_ball}{Ball}\textquotesingle{} around the node (aka the distances)  
+
+
+
+
+{\ttfamily \#include $<$Runner.\+h$>$}
+
+
+
+Collaboration diagram for Ball\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{struct_ball__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{struct_ball_a98f3b7d57acb2ba72e2429c90f5fe0a7}{in}} (const id\+\_\+t \&target) const
+\begin{DoxyCompactList}\small\item\em Decider for if the ID\textquotesingle{}s \doxylink{struct_node}{Node} is in this \doxylink{struct_ball}{Ball}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_ball_a86a144d3dad6c953e422e32435923bbb}{Ball}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{struct_ball}{Ball} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}} \& \mbox{\hyperlink{struct_ball_af824969cbe12eeb2798265f7f444d92f}{operator\mbox{[}$\,$\mbox{]}}} (const id\+\_\+t \&new\+\_\+id)
+\begin{DoxyCompactList}\small\item\em \mbox{[}\mbox{]} Operator to access the distance hashmap directly \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unordered\+\_\+map$<$ id\+\_\+t, \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}} $>$ \mbox{\hyperlink{struct_ball_aed4a1f0353f9e962a0b9cff8a0c2d989}{points\+\_\+in}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct to represent the \textquotesingle{}\doxylink{struct_ball}{Ball}\textquotesingle{} around the node (aka the distances) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_ball_a86a144d3dad6c953e422e32435923bbb}\label{struct_ball_a86a144d3dad6c953e422e32435923bbb} 
+\index{Ball@{Ball}!Ball@{Ball}}
+\index{Ball@{Ball}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{Ball()}{Ball()}}
+{\footnotesize\ttfamily Ball\+::\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \doxylink{struct_ball}{Ball} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_ball_a98f3b7d57acb2ba72e2429c90f5fe0a7}\label{struct_ball_a98f3b7d57acb2ba72e2429c90f5fe0a7} 
+\index{Ball@{Ball}!in@{in}}
+\index{in@{in}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{in()}{in()}}
+{\footnotesize\ttfamily bool Ball\+::in (\begin{DoxyParamCaption}\item[{const id\+\_\+t \&}]{target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Decider for if the ID\textquotesingle{}s \doxylink{struct_node}{Node} is in this \doxylink{struct_ball}{Ball}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target} & The ID of the node being checked if within this ball \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true \doxylink{struct_node}{Node} is in the \doxylink{struct_ball}{Ball} 
+
+false \doxylink{struct_node}{Node} is NOT in the ball 
+\end{DoxyReturn}
+\Hypertarget{struct_ball_af824969cbe12eeb2798265f7f444d92f}\label{struct_ball_af824969cbe12eeb2798265f7f444d92f} 
+\index{Ball@{Ball}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}} \& Ball\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const id\+\_\+t \&}]{new\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\mbox{[}\mbox{]} Operator to access the distance hashmap directly 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+id} & The ID of the \doxylink{struct_node}{Node} being added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dist\+\_\+t\& The distance from the center node to the ID given 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_ball_aed4a1f0353f9e962a0b9cff8a0c2d989}\label{struct_ball_aed4a1f0353f9e962a0b9cff8a0c2d989} 
+\index{Ball@{Ball}!points\_in@{points\_in}}
+\index{points\_in@{points\_in}!Ball@{Ball}}
+\doxysubsubsection{\texorpdfstring{points\_in}{points\_in}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$id\+\_\+t, \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}}$>$ Ball\+::points\+\_\+in}
+
+A hashmap with KEY\+: ID and VALUE\+: Distance for the center node to the ID\textquotesingle{}s node 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_runner_8h}{Runner.\+h}}\end{DoxyCompactItemize}

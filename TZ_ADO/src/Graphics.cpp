@@ -107,14 +107,14 @@ void Runner::drawFrame() const{
     if (view){
         for (const auto& b : balls[view->id]){
             for (const auto& c : b.points_in){
-                drawLine(view->x, view->y, V[c.first].x, V[c.first].y);
+                drawBlackLine(view->x, view->y, V[c.first].x, V[c.first].y);
             }
         }
     }
 
     //draw underlying graph
     for (const auto& e : edges){
-        drawGrLine(V[e.from].x, V[e.from].y, V[e.to].x, V[e.to].y);
+        drawGreyLine(V[e.from].x, V[e.from].y, V[e.to].x, V[e.to].y);
     }
     
     //draw all points
@@ -143,7 +143,7 @@ void Runner::drawFrame() const{
         //Redraw points for the second ball
         for (const auto& b : balls[query_u->id]){
             for (const auto& c : b.points_in){
-                drawGLine(query_u->x, query_u->y, V[c.first].x, V[c.first].y);
+                drawGreenLine(query_u->x, query_u->y, V[c.first].x, V[c.first].y);
         }
 
         for (const auto& ball : balls[query_u->id]){
@@ -161,7 +161,7 @@ void Runner::drawFrame() const{
     }
 
 
-        drawBLine(query_u->x, query_u->y, query_v->x, query_v->y);
+        drawBlueLine(query_u->x, query_u->y, query_v->x, query_v->y);
 
         Target target = {query_v->x-8, query_v->y-8, 16, 16};
         point_sprites.drawArea(&target, 0, 0, 16, 16);
@@ -171,7 +171,7 @@ void Runner::drawFrame() const{
 
     if (!dist_path.empty()){
         for (int i = 1; i < dist_path.size(); i++){
-            drawYLine(dist_path[i-1]->x, dist_path[i-1]->y, dist_path[i]->x, dist_path[i]->y);
+            drawYellowLine(dist_path[i-1]->x, dist_path[i-1]->y, dist_path[i]->x, dist_path[i]->y);
         }
     }
 

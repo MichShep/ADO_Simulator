@@ -1,0 +1,35 @@
+<map id="Runner::run" name="Runner::run">
+<area shape="rect" id="Node000001" title="Main handler for the running of the simulator&#39;s graphics." alt="" coords="5,301,95,327"/>
+<area shape="rect" id="Node000002" href="$class_runner.html#af46ff7d1fd72c99d6fa46301db5c7b48" title="Method to draw the points and edges onto the screen." alt="" coords="143,179,280,204"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,299,179,212,182,216,70,303"/>
+<area shape="rect" id="Node000010" href="$class_runner.html#a668b1144433179fbd10e4cccb1f97ccf" title="Method to reset the current frame to blank to redraw onto." alt="" coords="143,301,280,327"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="95,312,127,312,127,317,95,317"/>
+<area shape="rect" id="Node000011" href="$class_runner.html#a1dc178d88c509b46ca5b2cde780a0f01" title="User Input." alt="" coords="149,400,274,426"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="74,325,177,389,174,394,71,330"/>
+<area shape="rect" id="Node000003" href="$class_spritesheet.html#a29e2c4a6f7f5ab697deb3b3202736a72" title=" " alt="" coords="334,5,484,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,177,257,111,289,73,326,40,333,36,336,40,330,44,292,77,261,115,222,179"/>
+<area shape="rect" id="Node000004" href="$class_runner.html#a89c97dcab7d0ac923cc3fe792e69c90a" title="Draws a BLACK line from the two given coordinates." alt="" coords="330,55,487,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="223,176,266,134,295,110,327,89,337,84,339,89,329,94,298,114,269,138,226,180"/>
+<area shape="rect" id="Node000005" href="$class_runner.html#abf6fbe65cd913d43b5b7cb5134360145" title="Draws a BLUE line from the two given coordinates." alt="" coords="334,104,483,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="240,176,327,138,344,132,346,137,329,143,242,180"/>
+<area shape="rect" id="Node000006" href="$class_runner.html#a9ae8abec4912378a64b9ee9dd418d3dd" title="Draws a GREEN line from the two given coordinates." alt="" coords="330,153,488,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="279,180,314,176,314,181,280,185"/>
+<area shape="rect" id="Node000007" href="$class_runner.html#ae52c8048fbff1eecd2ae42c69d4a60b2" title="Draws a GREY line from the two given coordinates." alt="" coords="333,203,484,228"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="280,197,318,202,317,207,279,202"/>
+<area shape="rect" id="Node000008" href="$class_runner.html#a5082ed0ff302d58c6cc520646d0b9ed7" title="Draws a YELLOW line from the two given coordinates." alt="" coords="328,252,489,278"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="243,203,329,238,346,244,344,249,327,243,241,207"/>
+<area shape="rect" id="Node000009" href="$class_runner.html#a1d6c4d377563b970832276450e923265" title="Method that returns the sample number of the ball the Node is in." alt="" coords="357,301,460,327"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="226,203,269,245,298,268,329,288,344,295,341,299,327,292,295,272,266,249,223,207"/>
+<area shape="rect" id="Node000012" href="$class_runner.html#a002da123885b48d8f7b336eff6784395" title="Init obj&#39;s." alt="" coords="347,351,470,376"/>
+<area shape="poly" id="edge11_Node000011_Node000012" title=" " alt="" coords="265,397,339,378,340,383,267,402"/>
+<area shape="rect" id="Node000014" href="$class_runner.html#a8ce983f90f7a6bfb8ab2f38a3c5b841e" title="Handler for preprocesing the oracles." alt="" coords="355,400,462,426"/>
+<area shape="poly" id="edge13_Node000011_Node000014" title=" " alt="" coords="274,410,340,410,340,416,274,416"/>
+<area shape="rect" id="Node000015" href="$class_runner.html#ac004bc561dd4e784e4142fb7bd331e0f" title="Reset the simulation by freeing memory." alt="" coords="358,449,459,475"/>
+<area shape="poly" id="edge14_Node000011_Node000015" title=" " alt="" coords="267,424,344,443,343,449,265,429"/>
+<area shape="rect" id="Node000016" href="$class_runner.html#a24345bb19ac1d9f3e92dc7774212db2a" title="Handler for updating the closest Node." alt="" coords="331,499,486,524"/>
+<area shape="poly" id="edge15_Node000011_Node000016" title=" " alt="" coords="231,424,274,454,329,485,342,491,340,495,327,490,272,459,228,428"/>
+<area shape="rect" id="Node000013" href="$class_runner.html#aa5529292d0bb8973bbbc9eb1072ee5c9" title="Calculate the Euclidian distance between two nodes." alt="" coords="537,351,685,376"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="471,361,522,361,522,366,471,366"/>
+<area shape="rect" id="Node000017" href="$class_runner.html#a9bdbd65db68a566e10edf04fd270fabb" title="Get the closest Node to the given x and y coords." alt="" coords="544,499,678,524"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="487,509,528,509,528,514,487,514"/>
+</map>

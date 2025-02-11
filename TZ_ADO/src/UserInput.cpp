@@ -3,7 +3,7 @@
 void Runner::userInput(){
     SDL_Event event;
 
-    if (SDL_PollEvent(&event)){
+    if (SDL_PollEvent(&event)){ // Poll the event from the event queue
         switch (event.type){
             case SDL_KEYDOWN:{
                 switch (event.key.keysym.scancode){
@@ -12,13 +12,13 @@ void Runner::userInput(){
                         exit(0);
                         break;
                     }
-                    case SDL_SCANCODE_R:{ //rerandomize
+                    case SDL_SCANCODE_R:{ //Rerandomize
                         const auto t = time(NULL);
                         cout << "Reset with seed: " <<  t << endl;
                         srand(t);
                         reset();
 
-                        initPoints();
+                        initGraph();
                         prepro();
                         break;
                     }
@@ -41,21 +41,11 @@ void Runner::userInput(){
                     view = closest;
                     query_v = nullptr;
                     query_u = nullptr;
-
-                    /*cout << view->id << ": "; 
-                    for (const auto& i : p_i[view->id]){
-                        cout << i << " ";
-                    }
-                    cout << endl;*/
                 }
                 else{
                     if (view != closest){
                         query_v = view;
                         query_u = closest;
-                        
-                        const auto res = dist_k(query_u->id, query_v->id);
-
-                        //cout << "calc: " << res << " actual: " << adjacency_matrix[query_u->id][query_v->id] << " multi: " << res/adjacency_matrix[query_u->id][query_v->id] << endl;
                     }
                 }
                 break;
@@ -70,10 +60,10 @@ void Runner::userInput(){
     }
 }
 
-Point* Runner::getClosest(const int& x, const int& y){
+Node* Runner::getClosest(const int& x, const int& y){ //idiot comp by doing all points and getting the closest
     int min_index = -1;
     int min_dist = INT_MAX;
-    for (int i = 0; i < NUM_POINTS; i++){
+    for (int i = 0; i < num_nodes; i++){
         const auto pos = calcDist(V[i].x, V[i].y, x, y);
         if (pos <= 256 && pos < min_dist){
             min_dist = pos;
@@ -88,10 +78,10 @@ Point* Runner::getClosest(const int& x, const int& y){
     return &V[min_index];
 }
 
-Point* Runner::updateClosest(){
+Node* Runner::updateClosest(){
     int x; int y;
     SDL_GetMouseState(&x, &y);
-    const auto& res = getClosest(x, y);
+    const auto& res = getClosest(x, y); //pass cursor coords to blackbox (optimize later which is why its seperat)
 
     closest = res;
 

@@ -1,25 +1,25 @@
 #include "Runner.h"
 
-void Runner::initPoints(){
+void Runner::initGraph(){
     //- Create random points
-    V.reserve(NUM_POINTS);
+    V.reserve(num_nodes);
 
-    A.resize(K+1); //the K will dictate how many levels of samples there will be
+    A.resize(k+1); //the K will dictate how many levels of samples there will be
     balls.resize(n);
     for (auto& b : balls){
-        b.resize(K);
+        b.resize(k);
     }
 
     p_i.resize(n);
     for (auto& p : p_i){
-        p.resize(K-1);
+        p.resize(k-1);
     }
    
     const int screen_width = screen.WIDTH;
     const int screen_height = screen.HEIGHT;
     
-    for (int i = 0; i < NUM_POINTS; i++){
-        V.emplace_back(Point(i, rand()%screen_width, rand()%screen_height));
+    for (int i = 0; i < num_nodes; i++){
+        V.emplace_back(Node(i, rand()%screen_width, rand()%screen_height));
     }
 
     view = &V[0];
@@ -27,12 +27,12 @@ void Runner::initPoints(){
     adjacency_matrix.assign(n, vector<double>(n, std::numeric_limits<double>::infinity()));
 
     // Set diagonal to 0 (distance from a node to itself)
-    for (int i = 0; i < n; ++i) {
+    for (int i = 0; i < n; ++i){
         adjacency_matrix[i][i] = 0.0;
     }
 
     // Ensure the graph is connected by creating a spanning tree
-    for (int i = 1; i < n; ++i) {
+    for (int i = 1; i < n; ++i){
         int prevNode = rand() % i; // Ensure connection to an already added node
         double weight = calcDistance(V[i], V[prevNode]);
         adjacency_matrix[i][prevNode] = weight;
@@ -42,7 +42,7 @@ void Runner::initPoints(){
 
     // Add some additional random edges to make the graph richer
     int extraEdges = 0; // Add approximately numNodes additional edges
-    for (int i = 0; i < extraEdges; ++i) {
+    for (int i = 0; i < extraEdges; ++i){
         int from = rand() % n;
         int to = rand() % n;
         if (from != to) { // Avoid self-loops
@@ -60,7 +60,7 @@ void Runner::initPoints(){
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
                 if (adjacency_matrix[i][k] < std::numeric_limits<double>::infinity() &&
-                    adjacency_matrix[k][j] < std::numeric_limits<double>::infinity()) {
+                    adjacency_matrix[k][j] < std::numeric_limits<double>::infinity()){
                     adjacency_matrix[i][j] = min(adjacency_matrix[i][j],
                                                 adjacency_matrix[i][k] + adjacency_matrix[k][j]);
                 }
@@ -70,23 +70,23 @@ void Runner::initPoints(){
 }
 
 void Runner::prepro(){
-    prob = pow(n, -1.0/K);
+    prob = pow(n, -1.0/k);
 
     //A_0 <- V; 
     for (auto& node : V){ //first sample is all
         A[0].insert(&node);
     }
 
-    vector<Point*> sampled;
+    vector<Node*> sampled;
     sampled.reserve(n);
 
     //A_k <- 0
-    //A[K-1].insert(nullptr);//last sample is empty but starts empty as well
-    for (int i = 1; i <= K - 1; i++){
+    //A[K-1].insert(nullptr); //last sample is empty but starts empty as well
+    for (int i = 1; i <= k - 1; i++){
         //let A_i contain all the elements of A_i-1 with probability n^1-/k
         for (auto& node : A[i-1]){
             const auto r = (double)rand() / RAND_MAX;
-            if (r <= prob){ //prob of n^-1/k
+            if (r <= prob){ //prob of n^-1/k to add to sample
                 A[i].insert(node);
                 sampled.push_back(node);
                 node->sample = i;
@@ -96,7 +96,7 @@ void Runner::prepro(){
 
     int v_id = 0;
 
-    const auto& comparator = [&](const Point* lhs, const Point* rhs){
+    const auto& comparator = [&](const Node* lhs, const Node* rhs){
         if (!lhs || !rhs)
             return true;
 
@@ -120,12 +120,12 @@ void Runner::prepro(){
                 p_i[v.id][i-1] = w->id;
                 i++; 
 
-                if (i > K-1)
+                if (i > k-1)
                     break;
             }
         }
 
-        for (i = 0; i < K-1; i++){ //construct a ball for each sample where it connects to the next
+        for (i = 0; i < k-1; i++){ //construct a ball for each sample where it connects to the next
                     
             int p_i_weight = adjacency_matrix[p_i[v.id][i]][v.id];
             
@@ -142,10 +142,11 @@ void Runner::prepro(){
             }
         }
 
+        // Store the distances that are closer than the pivot
         for (auto& l : A[i]){
             if (v != l){
                 const auto pot = adjacency_matrix[l->id][v.id];
-                balls[v.id][K-1][l->id] = pot;
+                balls[v.id][k-1][l->id] = pot;
                 stored_distance[v.id][l->id] = pot;
                 stored_distance[l->id][v.id] = pot;
                 space++;
@@ -160,7 +161,7 @@ dist_t Runner::dist_k(id_t u, id_t v){
 
     const int og_u=u, og_v=v; //only for graphics
 
-    int i = 0;
+    int i = 0; // Current sample to check pivots
     
     while (inBall(v, w) == -1){ //while w is not u
         i++;
@@ -174,5 +175,5 @@ dist_t Runner::dist_k(id_t u, id_t v){
     dist_path.push_back(&V[w]);
     dist_path.push_back(&V[og_v]);
 
-    return stored_distance[v][w] + stored_distance[u][w];
+    return stored_distance[v][w] + stored_distance[u][w]; //u -> w + w -> v = u -> v
 }

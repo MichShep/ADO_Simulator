@@ -1,0 +1,5 @@
+<map id="Runner::dist_k" name="Runner::dist_k">
+<area shape="rect" id="Node000001" title="Query Algorithm for getting the approximate distance from two Nodes." alt="" coords="5,5,112,31"/>
+<area shape="rect" id="Node000002" href="$class_runner.html#a1d6c4d377563b970832276450e923265" title="Method that returns the sample number of the ball the Node is in." alt="" coords="160,5,263,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,16,144,16,144,21,112,21"/>
+</map>

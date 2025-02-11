@@ -1,0 +1,897 @@
+\doxysection{Runner Class Reference}
+\hypertarget{class_runner}{}\label{class_runner}\index{Runner@{Runner}}
+
+
+{\ttfamily \#include $<$Runner.\+h$>$}
+
+
+
+Collaboration diagram for Runner\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_runner_a6436d362da85636cd2aa6dc15cdc5e35}{Runner}} (const int \&\mbox{\hyperlink{class_runner_ab2cb55357ebb4006ebb6b6ab2164ccb7}{num\+\_\+nodes}}, const int \&\mbox{\hyperlink{class_runner_aca0cf8db3efb4ca8eb83551675c9325b}{k}}, const int \&\mbox{\hyperlink{class_runner_a3fc9b26a1c6cb721a83e65ddf39412cb}{additional\+\_\+edges}})
+\begin{DoxyCompactList}\small\item\em Construct a the graphics for rendering, the Graph, and the Balls. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_runner_a8b3dd8871c4a2a5c38b6053db6213c20}{run}} ()
+\begin{DoxyCompactList}\small\item\em Main handler for the running of the simulator\textquotesingle{}s graphics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a8ce983f90f7a6bfb8ab2f38a3c5b841e}{prepro}} ()
+\begin{DoxyCompactList}\small\item\em Handler for preprocesing the oracles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}} \mbox{\hyperlink{class_runner_a74cd5db672de9bcb677b44c424a4fb7e}{dist\+\_\+k}} (id\+\_\+t u, id\+\_\+t v)
+\begin{DoxyCompactList}\small\item\em Query Algorithm for getting the approximate distance from two Nodes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_runner_a1d6c4d377563b970832276450e923265}{in\+Ball}} (const id\+\_\+t \&center, const id\+\_\+t \&target) const
+\begin{DoxyCompactList}\small\item\em Method that returns the sample number of the ball the \doxylink{struct_node}{Node} is in. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a002da123885b48d8f7b336eff6784395}{init\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em Init obj\textquotesingle{}s. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a1dc178d88c509b46ca5b2cde780a0f01}{user\+Input}} ()
+\begin{DoxyCompactList}\small\item\em User Input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a9bdbd65db68a566e10edf04fd270fabb}{get\+Closest}} (const int \&x, const int \&y)
+\begin{DoxyCompactList}\small\item\em Get the closest \doxylink{struct_node}{Node} to the given x and y coords. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a24345bb19ac1d9f3e92dc7774212db2a}{update\+Closest}} ()
+\begin{DoxyCompactList}\small\item\em Handler for updating the closest \doxylink{struct_node}{Node}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_runner_aec894ad000798237c0975d1ef198522b}{\texorpdfstring{$\sim$}{\string~}\+Runner}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \doxylink{class_runner}{Runner} object and free the memory of all balls and points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_ac004bc561dd4e784e4142fb7bd331e0f}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the simulation by freeing memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a668b1144433179fbd10e4cccb1f97ccf}{reset\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em Method to reset the current frame to blank to redraw onto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_af46ff7d1fd72c99d6fa46301db5c7b48}{draw\+Frame}} () const
+\begin{DoxyCompactList}\small\item\em Method to draw the points and edges onto the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a89c97dcab7d0ac923cc3fe792e69c90a}{draw\+Black\+Line}} (const int \&x1, const int \&y1, const int \&x2, const int \&y2) const
+\begin{DoxyCompactList}\small\item\em Draws a BLACK line from the two given coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_abf6fbe65cd913d43b5b7cb5134360145}{draw\+Blue\+Line}} (const int \&x1, const int \&y1, const int \&x2, const int \&y2) const
+\begin{DoxyCompactList}\small\item\em Draws a BLUE line from the two given coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a5082ed0ff302d58c6cc520646d0b9ed7}{draw\+Yellow\+Line}} (const int \&x1, const int \&y1, const int \&x2, const int \&y2) const
+\begin{DoxyCompactList}\small\item\em Draws a YELLOW line from the two given coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a9ae8abec4912378a64b9ee9dd418d3dd}{draw\+Green\+Line}} (const int \&x1, const int \&y1, const int \&x2, const int \&y2) const
+\begin{DoxyCompactList}\small\item\em Draws a GREEN line from the two given coordinates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_ae52c8048fbff1eecd2ae42c69d4a60b2}{draw\+Grey\+Line}} (const int \&x1, const int \&y1, const int \&x2, const int \&y2) const
+\begin{DoxyCompactList}\small\item\em Draws a GREY line from the two given coordinates. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_runner_a599bdb0ba4f867456211e6bd07d22113}{init\+SDL}} ()
+\begin{DoxyCompactList}\small\item\em Init the SDL tools. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_runner_a963b71faf1e697dec9def2c3304b9b79}{init\+App}} ()
+\begin{DoxyCompactList}\small\item\em Init the \doxylink{struct_screen}{Screen} App. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a5db95bc755f3145d740c72788fa8f1c7}{shutdown\+App}} ()
+\begin{DoxyCompactList}\small\item\em Shutdown the app and free allocated SDL memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a94b3d6cd6850e1651d8fd2cff4f759f1}{update\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Update the window size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_runner_a78adab20de84b639ffa4e53fc8aace1d}{print\+Levels}} ()
+\begin{DoxyCompactList}\small\item\em Testing method to print the nodes in each sample. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_runner_aa5529292d0bb8973bbbc9eb1072ee5c9}{calc\+Distance}} (const \mbox{\hyperlink{struct_node}{Node}} \&a, const \mbox{\hyperlink{struct_node}{Node}} \&b)
+\begin{DoxyCompactList}\small\item\em Calculate the Euclidian distance between two nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+SDL\+\_\+\+Game\+Controller \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a3972c9f01076dba172a5208b9d18de43}{controller}}
+\item 
+SDL\+\_\+\+Window \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a9dee60ac1d6c66d9157f7eb80b4e0c46}{window}}
+\item 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a0d3759a0da685f03ce41de8a111f5ca0}{renderer}}
+\item 
+\mbox{\hyperlink{class_spritesheet}{Spritesheet}} \mbox{\hyperlink{class_runner_a782af7c8318be149a20c2eab394545ac}{point\+\_\+sprites}}
+\item 
+FC\+\_\+\+Font \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a06898a562a75d24f98ad0b8d22422318}{font1}}
+\item 
+\mbox{\hyperlink{struct_screen}{Screen}} \mbox{\hyperlink{class_runner_ae29107410ab2e0a72abd3f7a168ea936}{screen}}
+\item 
+\mbox{\hyperlink{_includes_8h_a451a7d205dfb766727eba25c6e61c687}{tick\+\_\+t}} \mbox{\hyperlink{class_runner_adfc84290ca23870b24be84b87eab4e7d}{clock}} =0
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_af111f176d14d242308e9ac4ebe78fcb3}{query\+\_\+v}} =nullptr
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a628bbfd1064e52f1a9bd918b43e5894e}{query\+\_\+u}} =nullptr
+\item 
+bool \mbox{\hyperlink{class_runner_ab378d3d918838ec82887f71e6ba0532b}{running}} = true
+\item 
+bool \mbox{\hyperlink{class_runner_a66942b9ac0444e4314af973b5ec1c92e}{controller\+\_\+used}} = false
+\item 
+int \mbox{\hyperlink{class_runner_ab2cb55357ebb4006ebb6b6ab2164ccb7}{num\+\_\+nodes}} = 200
+\item 
+int \mbox{\hyperlink{class_runner_aca0cf8db3efb4ca8eb83551675c9325b}{k}} = 3
+\item 
+int \mbox{\hyperlink{class_runner_a3fc9b26a1c6cb721a83e65ddf39412cb}{additional\+\_\+edges}}
+\item 
+unsigned int \mbox{\hyperlink{class_runner_ad405e25a658baf4a761a2d133c6941c3}{stretch}}
+\item 
+unsigned int \mbox{\hyperlink{class_runner_a4ca738d4815f4d78a6bd3fe9257220c5}{n}}
+\item 
+unsigned int \mbox{\hyperlink{class_runner_ae285e234edcedb85504965585bb3196c}{m}}
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_a028ef44c9705beb3155c9509e22afe89}{view}} = nullptr
+\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_runner_aa99605d374cc280636b168ab4c52a67e}{closest}} = nullptr
+\item 
+vector$<$ \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_runner_abb08dadb5715bf697920ebabdf0f1543}{dist\+\_\+path}}
+\item 
+vector$<$ \mbox{\hyperlink{struct_edge}{Edge}} $>$ \mbox{\hyperlink{class_runner_aa48e29505db2f6ef804f4ff0964d3fdb}{edges}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{class_runner_a0247ca3dd33aa28104c7cfb17fd9bc9d}{adjacency\+\_\+matrix}}
+\item 
+vector$<$ \mbox{\hyperlink{struct_node}{Node}} $>$ \mbox{\hyperlink{class_runner_a990803d9dbc7a9ad497cd1dd05386a13}{V}}
+\item 
+vector$<$ set$<$ \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} $>$ $>$ \mbox{\hyperlink{class_runner_a9a92c2695b30c808d2ee656e8b2d854c}{A}}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{struct_ball}{Ball}} $>$ $>$ \mbox{\hyperlink{class_runner_ac5087522f9038a89d735e80b731ca7db}{balls}}
+\item 
+vector$<$ vector$<$ id\+\_\+t $>$ $>$ \mbox{\hyperlink{class_runner_a43af034fedc8765f59bab6b601786e50}{p\+\_\+i}}
+\item 
+unordered\+\_\+map$<$ id\+\_\+t, unordered\+\_\+map$<$ id\+\_\+t, \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}} $>$ $>$ \mbox{\hyperlink{class_runner_a016eed8006aaaebed237adb219aa1cf7}{stored\+\_\+distance}}
+\item 
+double \mbox{\hyperlink{class_runner_a34a339164ce18e452c0336e0db02204c}{prob}} = 0.\+0
+\item 
+int \mbox{\hyperlink{class_runner_a72b5d5dc26eed3a467101ea08f4a9a54}{space}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_runner_a6436d362da85636cd2aa6dc15cdc5e35}\label{class_runner_a6436d362da85636cd2aa6dc15cdc5e35} 
+\index{Runner@{Runner}!Runner@{Runner}}
+\index{Runner@{Runner}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{Runner()}{Runner()}}
+{\footnotesize\ttfamily Runner\+::\+Runner (\begin{DoxyParamCaption}\item[{const int \&}]{num\+\_\+nodes,  }\item[{const int \&}]{k,  }\item[{const int \&}]{additional\+\_\+edges }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a the graphics for rendering, the Graph, and the Balls. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a6436d362da85636cd2aa6dc15cdc5e35_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_aec894ad000798237c0975d1ef198522b}\label{class_runner_aec894ad000798237c0975d1ef198522b} 
+\index{Runner@{Runner}!````~Runner@{\texorpdfstring{$\sim$}{\string~}Runner}}
+\index{````~Runner@{\texorpdfstring{$\sim$}{\string~}Runner}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Runner()}{\string~Runner()}}
+{\footnotesize\ttfamily Runner\+::\texorpdfstring{$\sim$}{\string~}\+Runner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the \doxylink{class_runner}{Runner} object and free the memory of all balls and points. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_runner_aec894ad000798237c0975d1ef198522b_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_runner_aa5529292d0bb8973bbbc9eb1072ee5c9}\label{class_runner_aa5529292d0bb8973bbbc9eb1072ee5c9} 
+\index{Runner@{Runner}!calcDistance@{calcDistance}}
+\index{calcDistance@{calcDistance}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{calcDistance()}{calcDistance()}}
+{\footnotesize\ttfamily double Runner\+::calc\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_node}{Node}} \&}]{a,  }\item[{const \mbox{\hyperlink{struct_node}{Node}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calculate the Euclidian distance between two nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \doxylink{struct_node}{Node} a \\
+\hline
+{\em b} & \doxylink{struct_node}{Node} b \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The Euclidian distance between the two nodes 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_aa5529292d0bb8973bbbc9eb1072ee5c9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a74cd5db672de9bcb677b44c424a4fb7e}\label{class_runner_a74cd5db672de9bcb677b44c424a4fb7e} 
+\index{Runner@{Runner}!dist\_k@{dist\_k}}
+\index{dist\_k@{dist\_k}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{dist\_k()}{dist\_k()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}} Runner\+::dist\+\_\+k (\begin{DoxyParamCaption}\item[{id\+\_\+t}]{u,  }\item[{id\+\_\+t}]{v }\end{DoxyParamCaption})}
+
+
+
+Query Algorithm for getting the approximate distance from two Nodes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & The starting \doxylink{struct_node}{Node} \\
+\hline
+{\em v} & The destination \doxylink{struct_node}{Node} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dist\+\_\+t The approx distance between Nodes u and v 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{class_runner_a74cd5db672de9bcb677b44c424a4fb7e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a89c97dcab7d0ac923cc3fe792e69c90a}\label{class_runner_a89c97dcab7d0ac923cc3fe792e69c90a} 
+\index{Runner@{Runner}!drawBlackLine@{drawBlackLine}}
+\index{drawBlackLine@{drawBlackLine}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{drawBlackLine()}{drawBlackLine()}}
+{\footnotesize\ttfamily void Runner\+::draw\+Black\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{x1,  }\item[{const int \&}]{y1,  }\item[{const int \&}]{x2,  }\item[{const int \&}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a BLACK line from the two given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & First x coord \\
+\hline
+{\em y1} & First y coord \\
+\hline
+{\em x2} & Second x coord \\
+\hline
+{\em y2} & Second y coord \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a89c97dcab7d0ac923cc3fe792e69c90a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_abf6fbe65cd913d43b5b7cb5134360145}\label{class_runner_abf6fbe65cd913d43b5b7cb5134360145} 
+\index{Runner@{Runner}!drawBlueLine@{drawBlueLine}}
+\index{drawBlueLine@{drawBlueLine}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{drawBlueLine()}{drawBlueLine()}}
+{\footnotesize\ttfamily void Runner\+::draw\+Blue\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{x1,  }\item[{const int \&}]{y1,  }\item[{const int \&}]{x2,  }\item[{const int \&}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a BLUE line from the two given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & First x coord \\
+\hline
+{\em y1} & First y coord \\
+\hline
+{\em x2} & Second x coord \\
+\hline
+{\em y2} & Second y coord \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_abf6fbe65cd913d43b5b7cb5134360145_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_af46ff7d1fd72c99d6fa46301db5c7b48}\label{class_runner_af46ff7d1fd72c99d6fa46301db5c7b48} 
+\index{Runner@{Runner}!drawFrame@{drawFrame}}
+\index{drawFrame@{drawFrame}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{drawFrame()}{drawFrame()}}
+{\footnotesize\ttfamily void Runner\+::draw\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to draw the points and edges onto the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_runner_af46ff7d1fd72c99d6fa46301db5c7b48_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_af46ff7d1fd72c99d6fa46301db5c7b48_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a9ae8abec4912378a64b9ee9dd418d3dd}\label{class_runner_a9ae8abec4912378a64b9ee9dd418d3dd} 
+\index{Runner@{Runner}!drawGreenLine@{drawGreenLine}}
+\index{drawGreenLine@{drawGreenLine}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{drawGreenLine()}{drawGreenLine()}}
+{\footnotesize\ttfamily void Runner\+::draw\+Green\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{x1,  }\item[{const int \&}]{y1,  }\item[{const int \&}]{x2,  }\item[{const int \&}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a GREEN line from the two given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & First x coord \\
+\hline
+{\em y1} & First y coord \\
+\hline
+{\em x2} & Second x coord \\
+\hline
+{\em y2} & Second y coord \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a9ae8abec4912378a64b9ee9dd418d3dd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_ae52c8048fbff1eecd2ae42c69d4a60b2}\label{class_runner_ae52c8048fbff1eecd2ae42c69d4a60b2} 
+\index{Runner@{Runner}!drawGreyLine@{drawGreyLine}}
+\index{drawGreyLine@{drawGreyLine}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{drawGreyLine()}{drawGreyLine()}}
+{\footnotesize\ttfamily void Runner\+::draw\+Grey\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{x1,  }\item[{const int \&}]{y1,  }\item[{const int \&}]{x2,  }\item[{const int \&}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a GREY line from the two given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & First x coord \\
+\hline
+{\em y1} & First y coord \\
+\hline
+{\em x2} & Second x coord \\
+\hline
+{\em y2} & Second y coord \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_ae52c8048fbff1eecd2ae42c69d4a60b2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a5082ed0ff302d58c6cc520646d0b9ed7}\label{class_runner_a5082ed0ff302d58c6cc520646d0b9ed7} 
+\index{Runner@{Runner}!drawYellowLine@{drawYellowLine}}
+\index{drawYellowLine@{drawYellowLine}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{drawYellowLine()}{drawYellowLine()}}
+{\footnotesize\ttfamily void Runner\+::draw\+Yellow\+Line (\begin{DoxyParamCaption}\item[{const int \&}]{x1,  }\item[{const int \&}]{y1,  }\item[{const int \&}]{x2,  }\item[{const int \&}]{y2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Draws a YELLOW line from the two given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1} & First x coord \\
+\hline
+{\em y1} & First y coord \\
+\hline
+{\em x2} & Second x coord \\
+\hline
+{\em y2} & Second y coord \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a5082ed0ff302d58c6cc520646d0b9ed7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a9bdbd65db68a566e10edf04fd270fabb}\label{class_runner_a9bdbd65db68a566e10edf04fd270fabb} 
+\index{Runner@{Runner}!getClosest@{getClosest}}
+\index{getClosest@{getClosest}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{getClosest()}{getClosest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Runner\+::get\+Closest (\begin{DoxyParamCaption}\item[{const int \&}]{x,  }\item[{const int \&}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the closest \doxylink{struct_node}{Node} to the given x and y coords. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x coord of the query point \\
+\hline
+{\em y} & The y coord of the query point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Node\texorpdfstring{$\ast$}{*} The closet \doxylink{struct_node}{Node} to the given coordinate 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a9bdbd65db68a566e10edf04fd270fabb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a1d6c4d377563b970832276450e923265}\label{class_runner_a1d6c4d377563b970832276450e923265} 
+\index{Runner@{Runner}!inBall@{inBall}}
+\index{inBall@{inBall}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{inBall()}{inBall()}}
+{\footnotesize\ttfamily int Runner\+::in\+Ball (\begin{DoxyParamCaption}\item[{const id\+\_\+t \&}]{center,  }\item[{const id\+\_\+t \&}]{target }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Method that returns the sample number of the ball the \doxylink{struct_node}{Node} is in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & The center node, whose Balls will be checked (hehe) \\
+\hline
+{\em target} & The node trying to be found in {\ttfamily center}\textquotesingle{}s balls \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The sample (or \doxylink{struct_ball}{Ball} level) of {\ttfamily center} the {\ttfamily target} is in (-\/1 if not found) 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a1d6c4d377563b970832276450e923265_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a963b71faf1e697dec9def2c3304b9b79}\label{class_runner_a963b71faf1e697dec9def2c3304b9b79} 
+\index{Runner@{Runner}!initApp@{initApp}}
+\index{initApp@{initApp}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{initApp()}{initApp()}}
+{\footnotesize\ttfamily bool Runner\+::init\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init the \doxylink{struct_screen}{Screen} App. 
+
+\begin{DoxyReturn}{Returns}
+true Succesfully init 
+
+false Failed to init 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_runner_a963b71faf1e697dec9def2c3304b9b79_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_runner_a963b71faf1e697dec9def2c3304b9b79_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a002da123885b48d8f7b336eff6784395}\label{class_runner_a002da123885b48d8f7b336eff6784395} 
+\index{Runner@{Runner}!initGraph@{initGraph}}
+\index{initGraph@{initGraph}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{initGraph()}{initGraph()}}
+{\footnotesize\ttfamily void Runner\+::init\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init obj\textquotesingle{}s. 
+
+Initializes the graph given a certain seed Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{class_runner_a002da123885b48d8f7b336eff6784395_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a002da123885b48d8f7b336eff6784395_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a599bdb0ba4f867456211e6bd07d22113}\label{class_runner_a599bdb0ba4f867456211e6bd07d22113} 
+\index{Runner@{Runner}!initSDL@{initSDL}}
+\index{initSDL@{initSDL}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{initSDL()}{initSDL()}}
+{\footnotesize\ttfamily bool Runner\+::init\+SDL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Init the SDL tools. 
+
+\begin{DoxyReturn}{Returns}
+true Succesfully init 
+
+false Failed to init 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a599bdb0ba4f867456211e6bd07d22113_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a8ce983f90f7a6bfb8ab2f38a3c5b841e}\label{class_runner_a8ce983f90f7a6bfb8ab2f38a3c5b841e} 
+\index{Runner@{Runner}!prepro@{prepro}}
+\index{prepro@{prepro}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{prepro()}{prepro()}}
+{\footnotesize\ttfamily void Runner\+::prepro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handler for preprocesing the oracles. 
+
+! Algorithm Attributes !  Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a8ce983f90f7a6bfb8ab2f38a3c5b841e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a78adab20de84b639ffa4e53fc8aace1d}\label{class_runner_a78adab20de84b639ffa4e53fc8aace1d} 
+\index{Runner@{Runner}!printLevels@{printLevels}}
+\index{printLevels@{printLevels}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{printLevels()}{printLevels()}}
+{\footnotesize\ttfamily void Runner\+::print\+Levels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Testing method to print the nodes in each sample. 
+
+\Hypertarget{class_runner_ac004bc561dd4e784e4142fb7bd331e0f}\label{class_runner_ac004bc561dd4e784e4142fb7bd331e0f} 
+\index{Runner@{Runner}!reset@{reset}}
+\index{reset@{reset}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Runner\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Reset the simulation by freeing memory. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_ac004bc561dd4e784e4142fb7bd331e0f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a668b1144433179fbd10e4cccb1f97ccf}\label{class_runner_a668b1144433179fbd10e4cccb1f97ccf} 
+\index{Runner@{Runner}!resetFrame@{resetFrame}}
+\index{resetFrame@{resetFrame}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{resetFrame()}{resetFrame()}}
+{\footnotesize\ttfamily void Runner\+::reset\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Method to reset the current frame to blank to redraw onto. 
+
+! Statistics Attributes !  Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a668b1144433179fbd10e4cccb1f97ccf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a8b3dd8871c4a2a5c38b6053db6213c20}\label{class_runner_a8b3dd8871c4a2a5c38b6053db6213c20} 
+\index{Runner@{Runner}!run@{run}}
+\index{run@{run}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily int Runner\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main handler for the running of the simulator\textquotesingle{}s graphics. 
+
+\begin{DoxyReturn}{Returns}
+int The exit state of the program 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a8b3dd8871c4a2a5c38b6053db6213c20_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_runner_a8b3dd8871c4a2a5c38b6053db6213c20_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a5db95bc755f3145d740c72788fa8f1c7}\label{class_runner_a5db95bc755f3145d740c72788fa8f1c7} 
+\index{Runner@{Runner}!shutdownApp@{shutdownApp}}
+\index{shutdownApp@{shutdownApp}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{shutdownApp()}{shutdownApp()}}
+{\footnotesize\ttfamily void Runner\+::shutdown\+App (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shutdown the app and free allocated SDL memory. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a5db95bc755f3145d740c72788fa8f1c7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a24345bb19ac1d9f3e92dc7774212db2a}\label{class_runner_a24345bb19ac1d9f3e92dc7774212db2a} 
+\index{Runner@{Runner}!updateClosest@{updateClosest}}
+\index{updateClosest@{updateClosest}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{updateClosest()}{updateClosest()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Runner\+::update\+Closest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handler for updating the closest \doxylink{struct_node}{Node}. 
+
+\begin{DoxyReturn}{Returns}
+Node\texorpdfstring{$\ast$}{*} The new closest \doxylink{struct_node}{Node} to user\textquotesingle{}s cursor 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_runner_a24345bb19ac1d9f3e92dc7774212db2a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a24345bb19ac1d9f3e92dc7774212db2a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a94b3d6cd6850e1651d8fd2cff4f759f1}\label{class_runner_a94b3d6cd6850e1651d8fd2cff4f759f1} 
+\index{Runner@{Runner}!updateScreen@{updateScreen}}
+\index{updateScreen@{updateScreen}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{updateScreen()}{updateScreen()}}
+{\footnotesize\ttfamily void Runner\+::update\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Update the window size. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a94b3d6cd6850e1651d8fd2cff4f759f1_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_runner_a1dc178d88c509b46ca5b2cde780a0f01}\label{class_runner_a1dc178d88c509b46ca5b2cde780a0f01} 
+\index{Runner@{Runner}!userInput@{userInput}}
+\index{userInput@{userInput}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{userInput()}{userInput()}}
+{\footnotesize\ttfamily void Runner\+::user\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+User Input. 
+
+Handlr for user input Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a1dc178d88c509b46ca5b2cde780a0f01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_runner_a1dc178d88c509b46ca5b2cde780a0f01_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_runner_a9a92c2695b30c808d2ee656e8b2d854c}\label{class_runner_a9a92c2695b30c808d2ee656e8b2d854c} 
+\index{Runner@{Runner}!A@{A}}
+\index{A@{A}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily vector$<$set$<$\mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*}$>$ $>$ Runner\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector of all samples \Hypertarget{class_runner_a3fc9b26a1c6cb721a83e65ddf39412cb}\label{class_runner_a3fc9b26a1c6cb721a83e65ddf39412cb} 
+\index{Runner@{Runner}!additional\_edges@{additional\_edges}}
+\index{additional\_edges@{additional\_edges}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{additional\_edges}{additional\_edges}}
+{\footnotesize\ttfamily int Runner\+::additional\+\_\+edges\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of additional edges to add to graph \Hypertarget{class_runner_a0247ca3dd33aa28104c7cfb17fd9bc9d}\label{class_runner_a0247ca3dd33aa28104c7cfb17fd9bc9d} 
+\index{Runner@{Runner}!adjacency\_matrix@{adjacency\_matrix}}
+\index{adjacency\_matrix@{adjacency\_matrix}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{adjacency\_matrix}{adjacency\_matrix}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Runner\+::adjacency\+\_\+matrix\hspace{0.3cm}{\ttfamily [private]}}
+
+AM version of the edges constructed \Hypertarget{class_runner_ac5087522f9038a89d735e80b731ca7db}\label{class_runner_ac5087522f9038a89d735e80b731ca7db} 
+\index{Runner@{Runner}!balls@{balls}}
+\index{balls@{balls}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{balls}{balls}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{struct_ball}{Ball}}$>$ $>$ Runner\+::balls\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector of each \doxylink{struct_node}{Node}\textquotesingle{}s \doxylink{struct_ball}{Ball} \Hypertarget{class_runner_adfc84290ca23870b24be84b87eab4e7d}\label{class_runner_adfc84290ca23870b24be84b87eab4e7d} 
+\index{Runner@{Runner}!clock@{clock}}
+\index{clock@{clock}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{clock}{clock}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_includes_8h_a451a7d205dfb766727eba25c6e61c687}{tick\+\_\+t}} Runner\+::clock =0\hspace{0.3cm}{\ttfamily [private]}}
+
+The clock for the current tick the screen is being drawn on \Hypertarget{class_runner_aa99605d374cc280636b168ab4c52a67e}\label{class_runner_aa99605d374cc280636b168ab4c52a67e} 
+\index{Runner@{Runner}!closest@{closest}}
+\index{closest@{closest}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{closest}{closest}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Runner\+::closest = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+Current \doxylink{struct_node}{Node} the player is hovering over \Hypertarget{class_runner_a3972c9f01076dba172a5208b9d18de43}\label{class_runner_a3972c9f01076dba172a5208b9d18de43} 
+\index{Runner@{Runner}!controller@{controller}}
+\index{controller@{controller}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{controller}{controller}}
+{\footnotesize\ttfamily SDL\+\_\+\+Game\+Controller\texorpdfstring{$\ast$}{*} Runner\+::controller\hspace{0.3cm}{\ttfamily [private]}}
+
+! Graphic Attributes ! Would be for using a controller to control but... \Hypertarget{class_runner_a66942b9ac0444e4314af973b5ec1c92e}\label{class_runner_a66942b9ac0444e4314af973b5ec1c92e} 
+\index{Runner@{Runner}!controller\_used@{controller\_used}}
+\index{controller\_used@{controller\_used}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{controller\_used}{controller\_used}}
+{\footnotesize\ttfamily bool Runner\+::controller\+\_\+used = false\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag for if the user has a controller ~\newline
+ \Hypertarget{class_runner_abb08dadb5715bf697920ebabdf0f1543}\label{class_runner_abb08dadb5715bf697920ebabdf0f1543} 
+\index{Runner@{Runner}!dist\_path@{dist\_path}}
+\index{dist\_path@{dist\_path}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{dist\_path}{dist\_path}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*}$>$ Runner\+::dist\+\_\+path\hspace{0.3cm}{\ttfamily [private]}}
+
+The path taken by the ADO to calculate the distance \Hypertarget{class_runner_aa48e29505db2f6ef804f4ff0964d3fdb}\label{class_runner_aa48e29505db2f6ef804f4ff0964d3fdb} 
+\index{Runner@{Runner}!edges@{edges}}
+\index{edges@{edges}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_edge}{Edge}}$>$ Runner\+::edges\hspace{0.3cm}{\ttfamily [private]}}
+
+! Preproccessing Attributes ! The edges connecting the Nodes \Hypertarget{class_runner_a06898a562a75d24f98ad0b8d22422318}\label{class_runner_a06898a562a75d24f98ad0b8d22422318} 
+\index{Runner@{Runner}!font1@{font1}}
+\index{font1@{font1}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{font1}{font1}}
+{\footnotesize\ttfamily FC\+\_\+\+Font\texorpdfstring{$\ast$}{*} Runner\+::font1\hspace{0.3cm}{\ttfamily [private]}}
+
+The font for text \Hypertarget{class_runner_aca0cf8db3efb4ca8eb83551675c9325b}\label{class_runner_aca0cf8db3efb4ca8eb83551675c9325b} 
+\index{Runner@{Runner}!k@{k}}
+\index{k@{k}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily int Runner\+::k = 3\hspace{0.3cm}{\ttfamily [private]}}
+
+The k-\/paramater to determine stretch and samples \Hypertarget{class_runner_ae285e234edcedb85504965585bb3196c}\label{class_runner_ae285e234edcedb85504965585bb3196c} 
+\index{Runner@{Runner}!m@{m}}
+\index{m@{m}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily unsigned int Runner\+::m\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of edges in the graph (\texorpdfstring{$\vert$}{|}\+E\texorpdfstring{$\vert$}{|}) \Hypertarget{class_runner_a4ca738d4815f4d78a6bd3fe9257220c5}\label{class_runner_a4ca738d4815f4d78a6bd3fe9257220c5} 
+\index{Runner@{Runner}!n@{n}}
+\index{n@{n}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily unsigned int Runner\+::n\hspace{0.3cm}{\ttfamily [private]}}
+
+The number of Nodes in the graph (\texorpdfstring{$\vert$}{|}\+V\texorpdfstring{$\vert$}{|}) \Hypertarget{class_runner_ab2cb55357ebb4006ebb6b6ab2164ccb7}\label{class_runner_ab2cb55357ebb4006ebb6b6ab2164ccb7} 
+\index{Runner@{Runner}!num\_nodes@{num\_nodes}}
+\index{num\_nodes@{num\_nodes}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{num\_nodes}{num\_nodes}}
+{\footnotesize\ttfamily int Runner\+::num\+\_\+nodes = 200\hspace{0.3cm}{\ttfamily [private]}}
+
+! Algorithm Attributes ! Number of Nodes to draw \Hypertarget{class_runner_a43af034fedc8765f59bab6b601786e50}\label{class_runner_a43af034fedc8765f59bab6b601786e50} 
+\index{Runner@{Runner}!p\_i@{p\_i}}
+\index{p\_i@{p\_i}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{p\_i}{p\_i}}
+{\footnotesize\ttfamily vector$<$vector$<$id\+\_\+t$>$ $>$ Runner\+::p\+\_\+i\hspace{0.3cm}{\ttfamily [private]}}
+
+The vector of each \doxylink{struct_node}{Node}\textquotesingle{}s pivots for the balls \Hypertarget{class_runner_a782af7c8318be149a20c2eab394545ac}\label{class_runner_a782af7c8318be149a20c2eab394545ac} 
+\index{Runner@{Runner}!point\_sprites@{point\_sprites}}
+\index{point\_sprites@{point\_sprites}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{point\_sprites}{point\_sprites}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spritesheet}{Spritesheet}} Runner\+::point\+\_\+sprites\hspace{0.3cm}{\ttfamily [private]}}
+
+The loaded spritesheet of the point sprites \Hypertarget{class_runner_a34a339164ce18e452c0336e0db02204c}\label{class_runner_a34a339164ce18e452c0336e0db02204c} 
+\index{Runner@{Runner}!prob@{prob}}
+\index{prob@{prob}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{prob}{prob}}
+{\footnotesize\ttfamily double Runner\+::prob = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+The probability that a \doxylink{struct_node}{Node} is sampled \Hypertarget{class_runner_a628bbfd1064e52f1a9bd918b43e5894e}\label{class_runner_a628bbfd1064e52f1a9bd918b43e5894e} 
+\index{Runner@{Runner}!query\_u@{query\_u}}
+\index{query\_u@{query\_u}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{query\_u}{query\_u}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Runner\+::query\+\_\+u =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the node being used as to query against v \Hypertarget{class_runner_af111f176d14d242308e9ac4ebe78fcb3}\label{class_runner_af111f176d14d242308e9ac4ebe78fcb3} 
+\index{Runner@{Runner}!query\_v@{query\_v}}
+\index{query\_v@{query\_v}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{query\_v}{query\_v}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Runner\+::query\+\_\+v =nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the node being used as the starting point \Hypertarget{class_runner_a0d3759a0da685f03ce41de8a111f5ca0}\label{class_runner_a0d3759a0da685f03ce41de8a111f5ca0} 
+\index{Runner@{Runner}!renderer@{renderer}}
+\index{renderer@{renderer}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{renderer}{renderer}}
+{\footnotesize\ttfamily SDL\+\_\+\+Renderer\texorpdfstring{$\ast$}{*} Runner\+::renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+The SDL Renderer to draw things onto the windor \Hypertarget{class_runner_ab378d3d918838ec82887f71e6ba0532b}\label{class_runner_ab378d3d918838ec82887f71e6ba0532b} 
+\index{Runner@{Runner}!running@{running}}
+\index{running@{running}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{running}{running}}
+{\footnotesize\ttfamily bool Runner\+::running = true\hspace{0.3cm}{\ttfamily [private]}}
+
+Flag for if the graphcis should continue \Hypertarget{class_runner_ae29107410ab2e0a72abd3f7a168ea936}\label{class_runner_ae29107410ab2e0a72abd3f7a168ea936} 
+\index{Runner@{Runner}!screen@{screen}}
+\index{screen@{screen}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{screen}{screen}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_screen}{Screen}} Runner\+::screen\hspace{0.3cm}{\ttfamily [private]}}
+
+The \doxylink{struct_screen}{Screen} object to create the window \Hypertarget{class_runner_a72b5d5dc26eed3a467101ea08f4a9a54}\label{class_runner_a72b5d5dc26eed3a467101ea08f4a9a54} 
+\index{Runner@{Runner}!space@{space}}
+\index{space@{space}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{space}{space}}
+{\footnotesize\ttfamily int Runner\+::space = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+! Statistics Attributes ! Number of distances stored \Hypertarget{class_runner_a016eed8006aaaebed237adb219aa1cf7}\label{class_runner_a016eed8006aaaebed237adb219aa1cf7} 
+\index{Runner@{Runner}!stored\_distance@{stored\_distance}}
+\index{stored\_distance@{stored\_distance}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{stored\_distance}{stored\_distance}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$id\+\_\+t, unordered\+\_\+map$<$id\+\_\+t, \mbox{\hyperlink{_includes_8h_ab7cc0449978d098dade2bb5ad46a438f}{dist\+\_\+t}}$>$ $>$ Runner\+::stored\+\_\+distance\hspace{0.3cm}{\ttfamily [private]}}
+
+The hashmap of all stored distances used in the query \Hypertarget{class_runner_ad405e25a658baf4a761a2d133c6941c3}\label{class_runner_ad405e25a658baf4a761a2d133c6941c3} 
+\index{Runner@{Runner}!stretch@{stretch}}
+\index{stretch@{stretch}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{stretch}{stretch}}
+{\footnotesize\ttfamily unsigned int Runner\+::stretch\hspace{0.3cm}{\ttfamily [private]}}
+
+The stretch factor of the given k (2k-\/1) \Hypertarget{class_runner_a990803d9dbc7a9ad497cd1dd05386a13}\label{class_runner_a990803d9dbc7a9ad497cd1dd05386a13} 
+\index{Runner@{Runner}!V@{V}}
+\index{V@{V}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{struct_node}{Node}}$>$ Runner\+::V\hspace{0.3cm}{\ttfamily [private]}}
+
+List of all Nodes \Hypertarget{class_runner_a028ef44c9705beb3155c9509e22afe89}\label{class_runner_a028ef44c9705beb3155c9509e22afe89} 
+\index{Runner@{Runner}!view@{view}}
+\index{view@{view}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{view}{view}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_node}{Node}}\texorpdfstring{$\ast$}{*} Runner\+::view = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+Current \doxylink{struct_node}{Node} the player has selected ~\newline
+ \Hypertarget{class_runner_a9dee60ac1d6c66d9157f7eb80b4e0c46}\label{class_runner_a9dee60ac1d6c66d9157f7eb80b4e0c46} 
+\index{Runner@{Runner}!window@{window}}
+\index{window@{window}!Runner@{Runner}}
+\doxysubsubsection{\texorpdfstring{window}{window}}
+{\footnotesize\ttfamily SDL\+\_\+\+Window\texorpdfstring{$\ast$}{*} Runner\+::window\hspace{0.3cm}{\ttfamily [private]}}
+
+The SDL Window to render onto 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_runner_8h}{Runner.\+h}}\item 
+\mbox{\hyperlink{_graphics_8cpp}{Graphics.\+cpp}}\item 
+\mbox{\hyperlink{_oracle_8cpp}{Oracle.\+cpp}}\item 
+\mbox{\hyperlink{_user_input_8cpp}{User\+Input.\+cpp}}\end{DoxyCompactItemize}

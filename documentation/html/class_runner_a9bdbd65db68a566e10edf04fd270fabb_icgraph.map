@@ -1,0 +1,11 @@
+<map id="Runner::getClosest" name="Runner::getClosest">
+<area shape="rect" id="Node000001" title="Get the closest Node to the given x and y coords." alt="" coords="617,5,751,31"/>
+<area shape="rect" id="Node000002" href="$class_runner.html#a24345bb19ac1d9f3e92dc7774212db2a" title="Handler for updating the closest Node." alt="" coords="413,5,569,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="601,21,569,21,569,16,601,16"/>
+<area shape="rect" id="Node000003" href="$class_runner.html#a1dc178d88c509b46ca5b2cde780a0f01" title="User Input." alt="" coords="240,5,365,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,21,366,21,366,16,398,16"/>
+<area shape="rect" id="Node000004" href="$class_runner.html#a8b3dd8871c4a2a5c38b6053db6213c20" title="Main handler for the running of the simulator&#39;s graphics." alt="" coords="103,5,192,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,21,192,21,192,16,225,16"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,55,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="88,21,55,21,55,16,88,16"/>
+</map>

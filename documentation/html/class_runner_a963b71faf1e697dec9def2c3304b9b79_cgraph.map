@@ -1,0 +1,9 @@
+<map id="Runner::initApp" name="Runner::initApp">
+<area shape="rect" id="Node000001" title="Init the Screen App." alt="" coords="5,55,117,80"/>
+<area shape="rect" id="Node000002" href="$class_runner.html#a599bdb0ba4f867456211e6bd07d22113" title="Init the SDL tools." alt="" coords="183,5,298,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,51,176,33,177,38,111,57"/>
+<area shape="rect" id="Node000003" href="$class_runner.html#a5db95bc755f3145d740c72788fa8f1c7" title="Shutdown the app and free allocated SDL memory." alt="" coords="165,55,316,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,65,150,65,150,70,117,70"/>
+<area shape="rect" id="Node000004" href="$class_runner.html#a94b3d6cd6850e1651d8fd2cff4f759f1" title="Update the window size." alt="" coords="165,104,316,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="111,78,177,97,176,102,110,84"/>
+</map>

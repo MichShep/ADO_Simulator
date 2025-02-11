@@ -1,0 +1,9 @@
+<map id="Runner::shutdownApp" name="Runner::shutdownApp">
+<area shape="rect" id="Node000001" title="Shutdown the app and free allocated SDL memory." alt="" coords="336,31,486,56"/>
+<area shape="rect" id="Node000002" href="$class_runner.html#a963b71faf1e697dec9def2c3304b9b79" title="Init the Screen App." alt="" coords="172,5,283,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,34,283,28,284,23,321,28"/>
+<area shape="rect" id="Node000004" href="$class_runner.html#aec894ad000798237c0975d1ef198522b" title="Destroy the Runner object and free the memory of all balls and points." alt="" coords="167,55,288,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="321,58,289,62,288,57,320,53"/>
+<area shape="rect" id="Node000003" href="$class_runner.html#a6436d362da85636cd2aa6dc15cdc5e35" title="Construct a the graphics for rendering, the Graph, and the Balls." alt="" coords="5,5,119,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="156,21,119,21,119,16,156,16"/>
+</map>

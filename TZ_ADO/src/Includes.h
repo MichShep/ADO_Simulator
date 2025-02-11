@@ -196,7 +196,3 @@ public:
         SDL_SetTextureAlphaMod(spritesheet_image, 255);
     }
 };
-
-constexpr int NUM_POINTS = 1000;
-constexpr int K = 6;
-const int SPARSE_EDGES = NUM_POINTS * std::log(NUM_POINTS);

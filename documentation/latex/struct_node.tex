@@ -1,0 +1,192 @@
+\doxysection{Node Struct Reference}
+\hypertarget{struct_node}{}\label{struct_node}\index{Node@{Node}}
+
+
+Struct to hold the coordinates of the Graphical representation of a \doxylink{struct_node}{Node}.  
+
+
+
+
+{\ttfamily \#include $<$Runner.\+h$>$}
+
+
+
+Collaboration diagram for Node\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{struct_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node_aa6e30bc91b09f7de87363bc99386f73e}{Node}} (const int \&\mbox{\hyperlink{struct_node_a18461c471da187a2f2112c7854c32171}{id}}=-\/1, const int \&\mbox{\hyperlink{struct_node_aff1029a518bdc2651007b8856f958364}{x}}=0, const int \&\mbox{\hyperlink{struct_node_aa3e5b5240023b4528ae85057b3324202}{y}}=0)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{struct_node}{Node} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_a0e28753e22ef956f881210795f1c102f}{operator==}} (const \mbox{\hyperlink{struct_node}{Node}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equivalency operator for two \doxylink{struct_node}{Node} objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_a567305666847c65fdbba026679573bd5}{operator==}} (const \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}other) const
+\begin{DoxyCompactList}\small\item\em Equivalency operator for a \doxylink{struct_node}{Node} object and \doxylink{struct_node}{Node} pointer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_a438f9a583f733cd05d0a6e0ef28dd3ef}{operator!=}} (const \mbox{\hyperlink{struct_node}{Node}} \&other) const
+\begin{DoxyCompactList}\small\item\em Non-\/\+Equivalency operator for two \doxylink{struct_node}{Node} objects. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_node_aac1cdd54ef09dad9548e60747d7f5ee5}{operator!=}} (const \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}other) const
+\begin{DoxyCompactList}\small\item\em Non-\/\+Equivalency operator for a \doxylink{struct_node}{Node} object and \doxylink{struct_node}{Node} pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+id\+\_\+t \mbox{\hyperlink{struct_node_a18461c471da187a2f2112c7854c32171}{id}} = -\/1
+\item 
+int \mbox{\hyperlink{struct_node_aff1029a518bdc2651007b8856f958364}{x}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_aa3e5b5240023b4528ae85057b3324202}{y}} = 0
+\item 
+int \mbox{\hyperlink{struct_node_aeb91443c845d18b622ae6730093efbf1}{sample}} = 0
+\item 
+\mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5}{Point\+State}} \mbox{\hyperlink{struct_node_ac30bdb0708e4317c3023f23ba3a65e6b}{state}} = \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a9eea16b4e105c96853a3a4cb462cc3a4}{Point\+State\+::\+BLANK}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct to hold the coordinates of the Graphical representation of a \doxylink{struct_node}{Node}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_node_aa6e30bc91b09f7de87363bc99386f73e}\label{struct_node_aa6e30bc91b09f7de87363bc99386f73e} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}\item[{const int \&}]{id = {\ttfamily -\/1},  }\item[{const int \&}]{x = {\ttfamily 0},  }\item[{const int \&}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new \doxylink{struct_node}{Node} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the \doxylink{struct_node}{Node} \\
+\hline
+{\em x} & The x coord of the \doxylink{struct_node}{Node} \\
+\hline
+{\em y} & The y coord of the \doxylink{struct_node}{Node} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_node_a438f9a583f733cd05d0a6e0ef28dd3ef}\label{struct_node_a438f9a583f733cd05d0a6e0ef28dd3ef} 
+\index{Node@{Node}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Node\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_node}{Node}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Non-\/\+Equivalency operator for two \doxylink{struct_node}{Node} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{struct_node}{Node} being compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Different Nodes (given by ID) 
+
+false Same Nodes 
+\end{DoxyReturn}
+\Hypertarget{struct_node_aac1cdd54ef09dad9548e60747d7f5ee5}\label{struct_node_aac1cdd54ef09dad9548e60747d7f5ee5} 
+\index{Node@{Node}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Node\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Non-\/\+Equivalency operator for a \doxylink{struct_node}{Node} object and \doxylink{struct_node}{Node} pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{struct_node}{Node} being compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Different Nodes (given by ID) 
+
+false Same Nodes 
+\end{DoxyReturn}
+\Hypertarget{struct_node_a0e28753e22ef956f881210795f1c102f}\label{struct_node_a0e28753e22ef956f881210795f1c102f} 
+\index{Node@{Node}!operator==@{operator==}}
+\index{operator==@{operator==}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Node\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_node}{Node}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equivalency operator for two \doxylink{struct_node}{Node} objects. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{struct_node}{Node} being compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The same \doxylink{struct_node}{Node} (given by ID) 
+
+false Different Nodes 
+\end{DoxyReturn}
+\Hypertarget{struct_node_a567305666847c65fdbba026679573bd5}\label{struct_node_a567305666847c65fdbba026679573bd5} 
+\index{Node@{Node}!operator==@{operator==}}
+\index{operator==@{operator==}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Node\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equivalency operator for a \doxylink{struct_node}{Node} object and \doxylink{struct_node}{Node} pointer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{struct_node}{Node} being compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true The same \doxylink{struct_node}{Node} (given by ID) 
+
+false Different Nodes 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_node_a18461c471da187a2f2112c7854c32171}\label{struct_node_a18461c471da187a2f2112c7854c32171} 
+\index{Node@{Node}!id@{id}}
+\index{id@{id}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily id\+\_\+t Node\+::id = -\/1}
+
+The ID of the node (-\/1 if not set) \Hypertarget{struct_node_aeb91443c845d18b622ae6730093efbf1}\label{struct_node_aeb91443c845d18b622ae6730093efbf1} 
+\index{Node@{Node}!sample@{sample}}
+\index{sample@{sample}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{sample}{sample}}
+{\footnotesize\ttfamily int Node\+::sample = 0}
+
+Which sample the node is in (only for graphics) \Hypertarget{struct_node_ac30bdb0708e4317c3023f23ba3a65e6b}\label{struct_node_ac30bdb0708e4317c3023f23ba3a65e6b} 
+\index{Node@{Node}!state@{state}}
+\index{state@{state}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5}{Point\+State}} Node\+::state = \mbox{\hyperlink{_includes_8h_a6b451e1a81d935444955bb7b95ca60f5a9eea16b4e105c96853a3a4cb462cc3a4}{Point\+State\+::\+BLANK}}}
+
+Which state of display the node is (is a sample, selected, ect) (only for graphics) \Hypertarget{struct_node_aff1029a518bdc2651007b8856f958364}\label{struct_node_aff1029a518bdc2651007b8856f958364} 
+\index{Node@{Node}!x@{x}}
+\index{x@{x}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Node\+::x = 0}
+
+The x coord of the node \Hypertarget{struct_node_aa3e5b5240023b4528ae85057b3324202}\label{struct_node_aa3e5b5240023b4528ae85057b3324202} 
+\index{Node@{Node}!y@{y}}
+\index{y@{y}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Node\+::y = 0}
+
+The y coord of the node 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_runner_8h}{Runner.\+h}}\end{DoxyCompactItemize}
