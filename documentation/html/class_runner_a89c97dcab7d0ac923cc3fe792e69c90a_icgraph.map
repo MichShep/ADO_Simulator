@@ -1,9 +1,0 @@
-<map id="Runner::drawBlackLine" name="Runner::drawBlackLine">
-<area shape="rect" id="Node000001" title="Draws a BLACK line from the two given coordinates." alt="" coords="424,5,581,31"/>
-<area shape="rect" id="Node000002" href="$class_runner.html#af46ff7d1fd72c99d6fa46301db5c7b48" title="Method to draw the points and edges onto the screen." alt="" coords="240,5,376,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="409,21,377,21,377,16,409,16"/>
-<area shape="rect" id="Node000003" href="$class_runner.html#a8b3dd8871c4a2a5c38b6053db6213c20" title="Main handler for the running of the simulator&#39;s graphics." alt="" coords="103,5,192,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="225,21,192,21,192,16,225,16"/>
-<area shape="rect" id="Node000004" href="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" title=" " alt="" coords="5,5,55,31"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,21,55,21,55,16,88,16"/>
-</map>
