@@ -6,17 +6,17 @@ Welcome to my **Approximate Distance Oracle Simulation**, inspired by the paper 
 
 ### Parameters
 
-The key parameter in this Oracle is $k$, which determines the \textbf{stretch factor} of $2k - 1$. This means that the estimated distance will be at most $(2k - 1)$ times the actual shortest path distance.
+The key parameter in this Oracle is $k$, which determines the **stretch factor** of $2k - 1$. This means that the estimated distance will be at most $(2k - 1)$ times the actual shortest path distance.
 
 ### How to Use the Simulator 
 
-To run the simulation, execute the $play$ file in _TZ_ADO/build/debug/play_ and provide the command-line arguments:
+To run the simulation, execute the _play_ file in _TZ_ADO/build/debug/play_ and provide the command-line arguments:
 
 1. **k** (integer between $1$ and $5$ – Determines the stretch factor.
 2. **Number of points** (any positive integer) – Higher values may slow performance.
 3. **Edge density scale** $[0,1]$ – A value of $1$ creates a complete graph.
 
-This was compiled on a Mac, so you may need to recompile it by simply running $make$ in the _TZ_ADO_ file in the command line.
+This was compiled on a Mac, so you may need to recompile it by simply running _make_ in the _TZ_ADO_ folder in the command line.
 
 ### Controls
 
@@ -26,7 +26,7 @@ This was compiled on a Mac, so you may need to recompile it by simply running $m
 - To **change the center node**, right-click on any other node.
 - To **view the Oracle's path to a target node**, left-click on that node. This will display the stored distance of that node and reveal where it intersects with the center node.
 
-Here is a short demo ideo showing the simulation:
+Here is a short demo video showing the simulation:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/JlZZQdGzeSo/0.jpg)](https://www.youtube.com/watch?v=JlZZQdGzeSo)
 
