@@ -14,6 +14,8 @@ To run the simulation, execute the $play$ file in _TZ_ADO/build/debug/play_ and 
 2. **Number of points** (any positive integer) – Higher values may slow performance.
 3. **Edge density scale** $[0,1]$ – A value of $1$ creates a complete graph.
 
+This was compiled on a Mac, so you may need to recompile it by simply running $make$ in the _TZ_ADO_ file in the command line.
+
 ### Controls
 
 - By default, a **node is selected** at the start.
